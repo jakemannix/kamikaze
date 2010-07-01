@@ -22,7 +22,7 @@ public class OrDocIdSetIterator extends DocIdSetIterator {
   private final Item[] _heap;
   private int _size;
  
-  OrDocIdSetIterator(List<DocIdSet> sets) throws IOException
+  public OrDocIdSetIterator(List<DocIdSet> sets) throws IOException
   {
     _curDoc = -1;
     _heap = new Item[sets.size()];
